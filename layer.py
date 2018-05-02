@@ -25,7 +25,7 @@ class Layer:
 
     def set_weight(self, weight_=None):
         if weight_ is None:
-            self.weight_matrix = 0.01 * np.random.randn(self.input_num + self.ADD_BIAS, self.perceptron_num)
+            self.weight_matrix = 0.01 * np.random.randn(self.input_num, self.perceptron_num)
             return
         self.weight_matrix = weight_
 
